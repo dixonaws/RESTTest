@@ -1,0 +1,104 @@
+import resttest.Account
+import resttest.Customer
+import resttest.Invoice
+
+/*
+    The fields from our invoice are as follows:
+
+    String invoiceId
+    String accountId
+    String customerId
+    String serviceAddress
+    Date servicePeriodStart
+    Date servicePeriodEnd
+    long amountDollars
+    long amountCents
+    long currentMeterReading
+    long previousMeterReading
+    String serviceCity
+    String servicePostalcode
+    String serviceCountrycode
+
+ */
+
+class BootStrap {
+
+    def init = { servletContext ->
+        def invoice0 = new Invoice(
+                invoiceId: "12345",
+                accountId: "000001",
+                customerId: "jpdixon",
+                servicePeriodStart: new Date("5/1/2016"),
+                servicePeriodEnd: new Date("5/31/2016"),
+                amountDollars: 94,
+                amountCents: 28,
+                currentMeterReading: 54318,
+                previousMeterReading: 53570
+        )
+
+        def invoice1 = new Invoice(
+                invoiceId: "12346",
+                accountId: "000001",
+                customerId: "jpdixon",
+                servicePeriodStart: new Date("6/1/2016"),
+                servicePeriodEnd: new Date("6/31/2016"),
+                amountDollars: 98,
+                amountCents: 29,
+                currentMeterReading: 53570,
+                previousMeterReading: 53611
+        )
+
+        def invoice2 = new Invoice(
+                invoiceId: "54321",
+                accountId: "000002",
+                customerId: "jpdixon",
+                servicePeriodStart: new Date("5/1/2016"),
+                servicePeriodEnd: new Date("5/31/2016"),
+                amountDollars: 138,
+                amountCents: 26,
+                currentMeterReading: 98,
+                previousMeterReading: 981
+        )
+
+        def invoice3 = new Invoice(
+                invoiceId: "54322",
+                accountId: "000002",
+                customerId: "jpdixon",
+                servicePeriodStart: new Date("6/1/2016"),
+                servicePeriodEnd: new Date("6/31/2016"),
+                amountDollars: 297,
+                amountCents: 11,
+                currentMeterReading: 445,
+                previousMeterReading: 556
+        )
+
+        def account0=new Account(invoices: [invoice0, invoice1],
+                accountId: "000001",
+                serviceAddress: "3021 Piedmond Rd Northeast",
+                serviceCity: "Atlanta",
+                servicePostalcode: "30319",
+                serviceCountrycode: "US"
+        )
+
+        def account1=new Account(invoices: [invoice2, invoice3],
+                accountId: "000002",
+                serviceAddress: "1445 Peachtree Northeast",
+                serviceCity: "Atlanta",
+                servicePostalcode: "30319",
+                serviceCountrycode: "US"
+        )
+
+        def customer0=new Customer(accounts: [account0, account1],
+            customerId: "001",
+            firstName: "John",
+            lastName: "Dixon")
+
+        // we don't need to save each invoice -- saving the account will also save the invoice objects
+        assert customer0.save(failOnError: true, flush: true, insert: true)
+
+    }
+
+    def destroy = {
+
+    }
+}
