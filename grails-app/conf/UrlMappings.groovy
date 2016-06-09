@@ -16,7 +16,7 @@ class UrlMappings {
         "/api/accounts" (resources:"account")
         "/accounts" (controller:"AccountController")
 
-        "/api/customer" (resources:"customer")
+        "/api/customers" (resources:"customer")
         "/customers" (controller:"CustomerController")
 	}
 }
