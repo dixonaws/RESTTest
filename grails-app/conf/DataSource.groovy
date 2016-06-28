@@ -1,3 +1,5 @@
+/*
+// we're not using a default dataSource
 dataSource {
     pooled = true
     jmxExport = true
@@ -5,24 +7,61 @@ dataSource {
     username = "sa"
     password = ""
 }
+*/
+
 hibernate {
     cache.use_second_level_cache = true
     cache.use_query_cache = false
-//    cache.region.factory_class = 'org.hibernate.cache.SingletonEhCacheRegionFactory' // Hibernate 3
+    //    cache.region.factory_class = 'org.hibernate.cache.SingletonEhCacheRegionFactory' // Hibernate 3
     cache.region.factory_class = 'org.hibernate.cache.ehcache.SingletonEhCacheRegionFactory' // Hibernate 4
     singleSession = true // configure OSIV singleSession mode
     flush.mode = 'manual' // OSIV session flush mode outside of transactional context
 }
 
+// hibernate will detect the database and deal with it appropriately
+
 // environment specific settings
 environments {
-    development {
+    rds_mariadb {
+        dataSource {
+            // dbCreate = "update"
+            dbCreate = "create-drop"
+            driverClassName = "org.mariadb.jdbc.Driver"
+            username = "master"
+            password = "iloveamazon!"
+            url = "jdbc:mariadb://powercoservice-mariadb.c15lzdctuff2.us-east-1.rds.amazonaws.com/powercoservice2"
+
+        }
+    }
+    rds_mysql {
+        dataSource {
+            // dbCreate = "update"
+            dbCreate = "create-drop"
+            driverClassName = "com.mysql.jdbc.Driver"
+            username="master"
+            password="iloveamazon!"
+            url = "jdbc:mysql://powercoservice.c15lzdctuff2.us-east-1.rds.amazonaws.com:3306/PowerCoService"
+
+        }
+    }
+    rds_postgresql {
+        dataSource {
+            // dbCreate = "update"
+            dbCreate = "create-drop"
+            driverClassName = "org.postgresql.Driver"
+            username="master"
+            password="iloveamazon!"
+            url = "jdbc:postgresql://powercoservice-postgresql.c15lzdctuff2.us-east-1.rds.amazonaws.com:5432/powercoservice3"
+
+        }
+    }
+    local_dev {
         dataSource {
             dbCreate = "create-drop" // one of 'create', 'create-drop', 'update', 'validate', ''
             url = "jdbc:h2:mem:devDb;MVCC=TRUE;LOCK_TIMEOUT=10000;DB_CLOSE_ON_EXIT=FALSE"
         }
     }
-    test {
+    local_test {
         dataSource {
             dbCreate = "update"
             url = "jdbc:h2:mem:testDb;MVCC=TRUE;LOCK_TIMEOUT=10000;DB_CLOSE_ON_EXIT=FALSE"
