@@ -52,8 +52,8 @@ class BootStrap {
                 invoiceId: "54321",
                 accountId: "000002",
                 customerId: "jpdixon",
-                servicePeriodStart: new Date("5/1/2016"),
-                servicePeriodEnd: new Date("5/31/2016"),
+                servicePeriodStart: new Date("2/1/2017"),
+                servicePeriodEnd: new Date("2/28/2017"),
                 amountDollars: 138,
                 amountCents: 26,
                 currentMeterReading: 98,
@@ -74,17 +74,17 @@ class BootStrap {
 
         def account0=new Account(invoices: [invoice0, invoice1],
                 accountId: "000001",
-                serviceAddress: "3021 Piedmond Rd Northeast",
-                serviceCity: "Atlanta",
-                servicePostalcode: "30319",
+                serviceAddress: "501 North High Street",
+                serviceCity: "Columbus",
+                servicePostalcode: "43215",
                 serviceCountrycode: "US"
         )
 
         def account1=new Account(invoices: [invoice2, invoice3],
                 accountId: "000002",
-                serviceAddress: "1445 Peachtree Northeast",
-                serviceCity: "Atlanta",
-                servicePostalcode: "30319",
+                serviceAddress: "155 West Nationwide",
+                serviceCity: "Columbus",
+                servicePostalcode: "43215",
                 serviceCountrycode: "US"
         )
 
