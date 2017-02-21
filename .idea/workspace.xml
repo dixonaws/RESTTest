@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="272706ba-f555-4dc3-bc04-2f2783774cdb" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/conf/BootStrap.groovy" afterPath="$PROJECT_DIR$/grails-app/conf/BootStrap.groovy" />
     </list>
     <ignored path="RESTTest.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -140,6 +139,7 @@
   <component name="Git.Settings">
     <option name="PREVIOUS_COMMIT_AUTHORS">
       <list>
+        <option value="dixon" />
         <option value="dixonaws &lt;dixonaws@amazon.com&gt;" />
         <option value="John &lt;dixon:dixonaws@amazon.com&gt;" />
         <option value="John &lt;Dixon:dixonaws@amazon.com&gt;" />
@@ -548,7 +548,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1464366719094</updated>
-      <workItem from="1487639559560" duration="6295000" />
+      <workItem from="1487639559560" duration="6348000" />
     </task>
     <task id="LOCAL-00001" summary="Updated PIN">
       <created>1487644020879</created>
@@ -578,11 +578,18 @@
       <option name="project" value="LOCAL" />
       <updated>1487647797908</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Updated Jenkins build">
+      <created>1487706364348</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1487706364348</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="6295000" />
+    <option name="totallyTimeSpent" value="6348000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="64" y="25" width="1166" height="716" extended-state="0" />
