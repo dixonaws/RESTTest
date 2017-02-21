@@ -90,8 +90,8 @@ class BootStrap {
 
         def customer0=new Customer(accounts: [account0, account1],
             customerId: "001",
-            firstName: "John",
-            lastName: "Dixon")
+            firstName: "Chip",
+            lastName: "Mallue")
 
         // we don't need to save each invoice -- saving the account will also save the invoice objects
         assert customer0.save(failOnError: true, flush: true, insert: true)
