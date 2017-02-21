@@ -70,8 +70,8 @@
         <entry file="file://$PROJECT_DIR$/grails-app/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="150">
-                <caret line="10" column="37" lean-forward="true" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="37" />
+              <first_editor relative-caret-position="165">
+                <caret line="11" column="4" lean-forward="true" selection-start-line="11" selection-start-column="4" selection-end-line="11" selection-end-column="4" />
                 <folding />
               </first_editor>
               <second_editor />
@@ -139,6 +139,7 @@
   <component name="Git.Settings">
     <option name="PREVIOUS_COMMIT_AUTHORS">
       <list>
+        <option value="John &lt;dixon:dixonaws@amazon.com&gt;" />
         <option value="John &lt;Dixon:dixonaws@amazon.com&gt;" />
         <option value="dixonaws@amazon.com" />
       </list>
@@ -186,8 +187,8 @@
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="19" />
-    <option name="y" value="33" />
+    <option name="x" value="99" />
+    <option name="y" value="44" />
     <option name="width" value="1166" />
     <option name="height" value="717" />
   </component>
@@ -531,7 +532,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1464366719094</updated>
-      <workItem from="1487639559560" duration="3127000" />
+      <workItem from="1487639559560" duration="4011000" />
     </task>
     <task id="LOCAL-00001" summary="Updated PIN">
       <created>1487644020879</created>
@@ -540,14 +541,21 @@
       <option name="project" value="LOCAL" />
       <updated>1487644020879</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Updated PIN">
+      <created>1487645947545</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1487645947545</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="3127000" />
+    <option name="totallyTimeSpent" value="4011000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="19" y="33" width="1166" height="717" extended-state="0" />
+    <frame x="99" y="44" width="1166" height="717" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -994,8 +1002,8 @@
       </provider>
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="150">
-            <caret line="10" column="37" lean-forward="true" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="37" />
+          <first_editor relative-caret-position="165">
+            <caret line="11" column="4" lean-forward="true" selection-start-line="11" selection-start-column="4" selection-end-line="11" selection-end-column="4" />
             <folding />
           </first_editor>
           <second_editor />
