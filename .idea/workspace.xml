@@ -46,7 +46,7 @@
       <file leaf-file-name="BootStrap.groovy" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/grails-app/conf/BootStrap.groovy">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="457">
+            <state relative-caret-position="1042">
               <caret line="121" column="0" lean-forward="true" selection-start-line="121" selection-start-column="0" selection-end-line="121" selection-end-column="0" />
               <folding>
                 <element signature="e#0#23#0" expanded="true" />
@@ -83,8 +83,8 @@
   <component name="Git.Settings">
     <option name="PREVIOUS_COMMIT_AUTHORS">
       <list>
-        <option value="dixon" />
         <option value="dixonaws &lt;dixonaws@amazon.com&gt;" />
+        <option value="dixon" />
         <option value="John &lt;dixon:dixonaws@amazon.com&gt;" />
         <option value="John &lt;Dixon:dixonaws@amazon.com&gt;" />
         <option value="dixonaws@amazon.com" />
@@ -495,7 +495,7 @@
       <workItem from="1487639559560" duration="7440000" />
       <workItem from="1488481034977" duration="387000" />
       <workItem from="1489450337577" duration="93000" />
-      <workItem from="1489450535018" duration="697000" />
+      <workItem from="1489450535018" duration="1093000" />
     </task>
     <task id="LOCAL-00001" summary="Updated PIN">
       <created>1487644020879</created>
@@ -546,11 +546,18 @@
       <option name="project" value="LOCAL" />
       <updated>1489451357108</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Added an account">
+      <created>1489451377243</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1489451377243</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="8617000" />
+    <option name="totallyTimeSpent" value="9013000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="70" y="34" width="1166" height="691" extended-state="0" />
@@ -1004,7 +1011,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/grails-app/conf/BootStrap.groovy">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="457">
+        <state relative-caret-position="1042">
           <caret line="121" column="0" lean-forward="true" selection-start-line="121" selection-start-column="0" selection-end-line="121" selection-end-column="0" />
           <folding>
             <element signature="e#0#23#0" expanded="true" />
