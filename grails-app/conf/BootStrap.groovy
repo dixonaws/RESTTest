@@ -60,6 +60,8 @@ class BootStrap {
                 previousMeterReading: 981
         )
 
+        /*
+        // we won't use invoices 3,4,5 in this version for the POC
         def invoice3 = new Invoice(
                 invoiceId: "54322",
                 accountId: "000002",
@@ -95,8 +97,9 @@ class BootStrap {
                 currentMeterReading: 445,
                 previousMeterReading: 556
         )
+        */
 
-        def account0=new Account(invoices: [invoice0, invoice1],
+        def account0=new Account(invoices: [invoice0],
                 accountId: "000001",
                 serviceAddress: "501 North High Street",
                 serviceCity: "Columbus",
@@ -104,7 +107,7 @@ class BootStrap {
                 serviceCountrycode: "US"
         )
 
-        def account1=new Account(invoices: [invoice2, invoice3],
+        def account1=new Account(invoices: [invoice1],
                 accountId: "000002",
                 serviceAddress: "155 West Nationwide",
                 serviceCity: "Columbus",
@@ -112,7 +115,7 @@ class BootStrap {
                 serviceCountrycode: "US"
         )
 
-        def account2=new Account(invoices: [invoice4, invoice5],
+        def account2=new Account(invoices: [invoice2],
                 accountId: "000003",
                 serviceAddress: "1 Riverside Plaza",
                 serviceCity: "Columbus",
