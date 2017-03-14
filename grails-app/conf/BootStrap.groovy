@@ -72,6 +72,30 @@ class BootStrap {
                 previousMeterReading: 556
         )
 
+        def invoice4 = new Invoice(
+                invoiceId: "54323",
+                accountId: "000003",
+                customerId: "jpdixon",
+                servicePeriodStart: new Date("6/1/2016"),
+                servicePeriodEnd: new Date("6/31/2016"),
+                amountDollars: 1293,
+                amountCents: 9,
+                currentMeterReading: 445,
+                previousMeterReading: 556
+        )
+
+        def invoice5 = new Invoice(
+                invoiceId: "54324",
+                accountId: "000003",
+                customerId: "jpdixon",
+                servicePeriodStart: new Date("6/1/2016"),
+                servicePeriodEnd: new Date("6/31/2016"),
+                amountDollars: 1921,
+                amountCents: 10,
+                currentMeterReading: 445,
+                previousMeterReading: 556
+        )
+
         def account0=new Account(invoices: [invoice0, invoice1],
                 accountId: "000001",
                 serviceAddress: "501 North High Street",
@@ -88,10 +112,18 @@ class BootStrap {
                 serviceCountrycode: "US"
         )
 
-        def customer0=new Customer(accounts: [account0, account1],
+        def account2=new Account(invoices: [invoice4, invoice5],
+                accountId: "000003",
+                serviceAddress: "1 Riverside Plaza",
+                serviceCity: "Columbus",
+                servicePostalcode: "43215",
+                serviceCountrycode: "US"
+        )
+
+        def customer0=new Customer(accounts: [account0, account1, account2],
             customerId: "001",
-            firstName: "Chip",
-            lastName: "Mallue")
+            firstName: "John",
+            lastName: "Dixon")
 
         // we don't need to save each invoice -- saving the account will also save the invoice objects
         assert customer0.save(failOnError: true, flush: true, insert: true)
