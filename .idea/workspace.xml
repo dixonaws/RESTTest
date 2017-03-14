@@ -3,8 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="272706ba-f555-4dc3-bc04-2f2783774cdb" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application.properties" afterPath="$PROJECT_DIR$/application.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/conf/BootStrap.groovy" afterPath="$PROJECT_DIR$/grails-app/conf/BootStrap.groovy" />
     </list>
     <ignored path="RESTTest.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -497,7 +495,7 @@
       <workItem from="1487639559560" duration="7440000" />
       <workItem from="1488481034977" duration="387000" />
       <workItem from="1489450337577" duration="93000" />
-      <workItem from="1489450535018" duration="678000" />
+      <workItem from="1489450535018" duration="697000" />
     </task>
     <task id="LOCAL-00001" summary="Updated PIN">
       <created>1487644020879</created>
@@ -541,11 +539,18 @@
       <option name="project" value="LOCAL" />
       <updated>1487706431200</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Added an account">
+      <created>1489451357108</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1489451357108</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="8598000" />
+    <option name="totallyTimeSpent" value="8617000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="70" y="34" width="1166" height="691" extended-state="0" />
@@ -595,7 +600,8 @@
     <MESSAGE value="Updated build" />
     <MESSAGE value="Updated Jenkins build" />
     <MESSAGE value="Updated name" />
-    <option name="LAST_COMMIT_MESSAGE" value="Updated name" />
+    <MESSAGE value="Added an account" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added an account" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
