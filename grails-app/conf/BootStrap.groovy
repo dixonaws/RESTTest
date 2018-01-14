@@ -109,7 +109,7 @@ class BootStrap {
 
         def account1=new Account(invoices: [invoice1],
                 accountId: "000002",
-                serviceAddress: "3740 Erie Ave",
+                serviceAddress: "3740 Erie Avenue",
                 serviceCity: "Columbus",
                 servicePostalcode: "43215",
                 serviceCountrycode: "US"
