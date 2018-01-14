@@ -48,17 +48,17 @@ class BootStrap {
                 previousMeterReading: 53611
         )
 
-        def invoice2 = new Invoice(
-                invoiceId: "54321",
-                accountId: "000002",
-                customerId: "jpdixon",
-                servicePeriodStart: new Date("2/1/2017"),
-                servicePeriodEnd: new Date("2/28/2017"),
-                amountDollars: 238,
-                amountCents: 26,
-                currentMeterReading: 98,
-                previousMeterReading: 981
-        )
+//        def invoice2 = new Invoice(
+//                invoiceId: "54321",
+//                accountId: "000002",
+//                customerId: "jpdixon",
+//                servicePeriodStart: new Date("2/1/2017"),
+//                servicePeriodEnd: new Date("2/28/2017"),
+//                amountDollars: 238,
+//                amountCents: 26,
+//                currentMeterReading: 98,
+//                previousMeterReading: 981
+//        )
 
         /*
         // we won't use invoices 3,4,5 in this version for the POC
@@ -101,27 +101,27 @@ class BootStrap {
 
         def account0=new Account(invoices: [invoice0],
                 accountId: "000001",
-                serviceAddress: "501 North High Street",
-                serviceCity: "Columbus",
+                serviceAddress: "3740 Erie Ave",
+                serviceCity: "Cincinnati",
                 servicePostalcode: "43215",
                 serviceCountrycode: "US"
         )
 
         def account1=new Account(invoices: [invoice1],
                 accountId: "000002",
-                serviceAddress: "155 West Nationwide",
-                serviceCity: "Columbus",
+                serviceAddress: "150 West Jefferson",
+                serviceCity: "Detroit",
                 servicePostalcode: "43215",
                 serviceCountrycode: "US"
         )
 
-        def account2=new Account(invoices: [invoice2],
-                accountId: "000003",
-                serviceAddress: "1 Riverside Plaza",
-                serviceCity: "Columbus",
-                servicePostalcode: "43215",
-                serviceCountrycode: "US"
-        )
+//        def account2=new Account(invoices: [invoice2],
+//                accountId: "000003",
+//                serviceAddress: "1 Riverside Plaza",
+//                serviceCity: "Columbus",
+//                servicePostalcode: "43215",
+//                serviceCountrycode: "US"
+//        )
 
         def customer0=new Customer(accounts: [account0, account1, account2],
             customerId: "001",
